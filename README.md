@@ -10,6 +10,9 @@ This small repository is an example of how this can be accomplished.
 The basics are:
 
 * link with `nodefaultlibs`
-* define a custom system that orders the sections appropriately (TEXT followed by DATA)
-* write custom startup code that starts at offset 100h, and tell the linker to use it
+* define a custom system that orders the sections appropriately (TEXT followed
+  by DATA)
+* write custom startup code that starts at offset 100h, and tell the linker to
+  use it
 
+Note that this example does not zero bss or set up any sort of stack or heap.
